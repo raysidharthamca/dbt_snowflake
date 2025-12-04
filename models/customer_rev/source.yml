@@ -1,0 +1,21 @@
+sources:
+  - name: landing
+    database: DBT_SNOWFLAKE
+    schema: L1_LANDING
+
+    tables:
+      # Generate model
+      - name: customers
+        identifier: customers
+
+      # Generate model
+      - name: orders
+        identifier: orders
+
+      # Generate model
+      - name: orderitems
+        identifier: orderitems
+
+      # Generate model
+      - name: employees
+        identifier: employees
