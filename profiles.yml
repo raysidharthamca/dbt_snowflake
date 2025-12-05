@@ -1,0 +1,21 @@
+dbt_snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: dbt_snowflake
+      schema: dbt_sray_dev
+      warehouse: compute_wh
+
+    prod:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: dbt_snowflake
+      schema: dbt_sray_prod
+      warehouse: compute_wh
+
